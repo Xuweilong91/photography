@@ -1,0 +1,254 @@
+.white{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.black{
+    background: #000;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    transition:1s;
+}
+
+
+.black.active{
+    transform: scale(80);
+}
+
+.white.active{
+    display: none;
+}
+
+
+.project{
+    overflow: hidden;
+    transition: 1s;
+    transform: translateX(-3000px);
+}
+
+.project.active{
+   transform: translateX(0);
+}
+
+.project .list{
+    height: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.project .item{
+    position: relative;
+    float: left;
+    height: 760px;
+    width: 20%;
+    color: #fff;
+    z-index: 10;
+    box-sizing: border-box;
+    transition: .7s .5s;
+    border: 3px solid transparent;
+}
+
+.project .type{
+    position: absolute;
+    top: 420px;
+    left: 55px;
+    width: 200px;
+    height: 70px;
+    color: #969697;
+}
+
+.project .type .text{
+    cursor: pointer;
+}
+
+.project .type .text.active{
+    color: #fff;
+}
+
+.project .type .text:hover{
+    color: #fff;
+}
+
+.project .type .mark{
+    margin: 0 10px;
+}
+
+.project .item:nth-child(2){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects1.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+
+.project .item:nth-child(3){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects2.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+.project .item:nth-child(4){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects3.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+.project .item:nth-child(5){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects4.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+
+.project .item:nth-child(n+2):hover{
+    border: 3px solid red;
+}
+
+.project .item:nth-child(n+2):hover .text-holder{
+    display: block;
+}
+
+.project .text-holder{
+    display: none;
+    height: 254px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project .text-holder .title{
+    margin-top: 74px;
+    font-size: 14px;
+}
+
+.project .text-holder .desc{
+    margin-top: 15px;
+}
+
+.project .link-to-photo{
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    bottom: 30px;
+    font-size: 16px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.project .link-to-photo:hover{
+    color: red;
+    border: 1px solid red;
+    background-color: #fff;
+}
+
+.project .list2{
+    margin-top: 50px;
+}
+
+.project .list2 .item:nth-child(2){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects5.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+
+.project .list2 .item:nth-child(3){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects6.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+.project .list2 .item:nth-child(4){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects7.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+.project .list2 .item:nth-child(5){
+    background: url('http://www.bufantec.com/site/sheying/pages/film/images/projects8.jpg') no-repeat center;
+    background-size: cover;
+    background-position:0 0;
+}
+
+
+@media (max-width:1024px){
+    .title-en {
+        display: block;
+        position: static;
+        font-size: 20px;
+        transform: rotate(0deg);
+        transform-origin: 0 100%;
+      }
+    
+      .title-cn {
+        position: static;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+      }
+    
+      .project {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+      .project .list {
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      .project .item {
+        float: none;
+        height: 360px;
+        width: 100%;
+        margin-top: 20px;
+      }
+    
+      .project .item:nth-child(1) {
+        text-align: center;
+        height: 80px;
+        width: 100%;
+      }
+    
+      .project .item.before-active {
+        width: 100%;
+      }
+    
+      .project .type {
+        position: static;
+        margin: 0 auto;
+      }
+    
+      .project .text-holder {
+        display: none;
+      }
+    
+      .project .link-to-photo {
+        display: none;
+      }
+    
+      .project .link-to-photo:hover {
+        display: none;
+      }
+    
+      .project .item:nth-child(n + 2):hover {
+        border: 3px solid transparent;
+      }
+    
+      .project .item:nth-child(n + 2):hover .text-holder {
+        display: none;
+      }
+}

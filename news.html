@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/news.css">
+</head>
+
+<body>
+
+    <div class="white">
+        <div class="black"></div>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="http://www.bufantec.com/site/sheying/images/logo.png" alt="">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html">
+                    首页
+                </a>
+                <span></span>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">
+                    关于
+                </a>
+                <span></span>
+            </li>
+            <li class="nav-item">
+                <a href="photo.html">
+                    摄影
+                </a>
+                <span></span>
+            </li>
+            <li class="nav-item  active">
+                <a href="news.html">
+                    新闻
+                </a>
+                <span></span>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">
+                    联系
+                </a>
+                <span></span>
+            </li>
+            <li class="nav-item search">
+                <img class="cursor" src="http://www.bufantec.com/site/sheying/images/search.png" alt="">
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="header-m">
+        <div class="logo">
+            <img src="http://www.bufantec.com/site/sheying/images/logo.png" alt="">
+        </div>
+        <div class="open-btn">
+            <span class="line one"></span>
+            <span class="line two"></span>
+            <span class="line three"></span>
+        </div>
+
+        <ul class="list">
+            <li class="item">
+            </li>
+            <li class="item">
+                <a href="index.html">首页</a>
+            </li>
+            <li class="item">
+                <a href="about.html">关于</a>
+            </li>
+            <li class="item">
+                <a href="news.html">新闻</a>
+            </li>
+            <li class="item">
+                <a href="photo.html">摄影</a>
+            </li>
+            <li class="item">
+                <a href="contact.html">联系</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="news">
+        <div class="col left">
+            <div class="title">
+                <span class="title-en">STATIONNEWS</span>
+                <span class="title-cn">新闻资讯</span>
+            </div>
+            <p class="type">
+                <span class="text active">全部</span>
+                <span class="mark">/</span>
+                <span class="text">2019</span>
+                <span class="mark">/</span>
+                <span class="text">2018</span>
+                <span class="mark">/</span>
+                <span class="text">2017</span>
+                <span class="mark">/</span>
+                <span class="text">2016</span>
+            </p>
+        </div>
+        <div class="col middle">
+            <img src="http://www.bufantec.com/site/sheying/pages/news/images/news1.jpg" alt="">
+            <p>每一张照片都让你记忆尤新</p>
+        </div>
+        <div class="col right">
+            <ul class="list">
+                <li class="item">
+                    <p class="time">2018 12-08</p>
+                    <p class="text-title">我们的企业不仅支持PC桌面端</p>
+                    <p class="text-desc">我们的企业不仅支持PC桌面端，更完美支持手机触屏版</p>
+                </li>
+                <li class="item active">
+                    <p class="time">2018 11-21</p>
+                    <p class="text-title">一个网站在打开时需要同时加载很多张图片还很大</p>
+                    <p class="text-desc">如果网站中没张图片都很大，必定影响网站打开速度<br>
+                        造成图片文件较大的原因有：色彩过于丰富、尺寸大、无压缩</p>
+                </li>
+                <li class="item">
+                    <p class="time">2018 12-08</p>
+                    <p class="text-title">全球奖金最高摄影大赛HIPA获奖作品揭晓</p>
+                    <p class="text-desc">来源：新摄影网 网友评论679条 进入论坛 中国服装网</p>
+                </li>
+                <li class="item">
+                    <p class="time">2017 12-09</p>
+                    <p class="text-title">以为摄影师靠“细节”汇报了三年</p>
+                    <p class="text-desc">设计的任务不只是为生活和商业服务同时也伴有艺术性的创作</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        window.onload = function () {
+            (function () {
+                $('.black').addClass('active');
+                setTimeout(() => {
+                    $('.white').addClass('active');
+                    $('.project').addClass('active');
+                }, 1000)
+            })()
+        }
+    </script>
+</body>
+
+</html>

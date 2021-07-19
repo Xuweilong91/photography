@@ -1,0 +1,168 @@
+.news {
+  width: 100%;
+  overflow: hidden;
+  height: 830px;
+}
+
+.title {
+  color: #fff;
+}
+
+.col {
+  float: left;
+  height: 100%;
+}
+
+.left {
+  width: 20%;
+  position: relative;
+}
+
+.middle {
+  width: 45%;
+  position: relative;
+}
+
+.middle img {
+  width: 100%;
+  height: 100%;
+}
+
+.middle p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.right {
+  width: 35%;
+  text-align: center;
+}
+
+.right .list {
+  width: 100%;
+  height: 100%;
+}
+
+.right .item {
+  width: 100%;
+  height: 25%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  border: 1px solid transparent;
+  background-color: #333333;
+  line-height: 30px;
+  color: #adadad;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.right .item.active {
+  background-color: #000;
+  border: 1px solid red;
+}
+
+.right .item:hover {
+  background-color: #000;
+  border: 1px solid red;
+}
+
+.right .item .text-title {
+  font-size: 14px;
+  color: #fff;
+}
+
+.news .type {
+  position: absolute;
+  bottom: 100px;
+  left: 55px;
+  width: 200px;
+  height: 70px;
+  color: #969697;
+  line-height: 30px;
+}
+
+.news .type .text {
+  cursor: pointer;
+}
+
+.news .type .text.active {
+  color: #fff;
+}
+
+.news .type .text:hover {
+  color: #fff;
+}
+
+.news .type .mark {
+  margin: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .news {
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+  }
+  .title-en {
+    display: block;
+    position: static;
+    font-size: 20px;
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+  }
+
+  .title-cn {
+    position: static;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .col {
+    float: none;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+    position: relative;
+    height: 150px;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .middle {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .middle p {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .news .type {
+    position: static;
+    margin: 20px auto;   
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right .item {
+      padding-top: 10px;
+  }
+
+  .right .item.active {
+    background-color: #333;
+    border: 1px solid transparent;
+  }
+  
+  .right .item:hover {
+    background-color: #333;
+    border: 1px solid transparent;
+  }
+}

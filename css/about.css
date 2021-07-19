@@ -1,0 +1,206 @@
+.about {
+  overflow: hidden;
+}
+
+.about .list {
+  width: 100%;
+  height: 100vh;
+}
+
+.about .item {
+  float: left;
+  position: relative;
+  height: 100%;
+  font-size: 12px;
+  color: #e2e0e0;
+  opacity: 1;
+  transition: 0.7s 0.2s;
+}
+
+.about .item:nth-child(1) {
+  width: 20%;
+}
+
+.about .item:nth-child(2) {
+  width: 30%;
+  background: url("http://www.bufantec.com/site/sheying/images/about1.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.about .item:nth-child(3) {
+  width: 50%;
+}
+
+.about .item .top-box {
+  height: 55%;
+  box-sizing: border-box;
+  padding: 40px 20px 0 135px;
+  opacity: 1;
+  transition: 0.7s 0.2s;
+}
+
+.about .item .top-box .top-text-cn {
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.about .item .top-box .top-text-en {
+  color: #fff;
+  font-size: 10px;
+  margin-top: 30px;
+  line-height: 16px;
+}
+
+.about .item .top-box h1 {
+  height: 50px;
+  width: fit-content;
+  border-bottom: 2px solid #fff;
+  font-size: 24px;
+  margin-bottom: 65px;
+}
+
+.about .item .bottom-box {
+  background-color: #f00;
+  height: 45%;
+  opacity: 1;
+  transition: 0.7s 0.2s;
+}
+
+.about .item .bottom-box img {
+  display: block;
+  float: left;
+  width: 49.5%;
+}
+
+.about .item .bottom-box .text-holder {
+  float: right;
+  color: #fff;
+  padding-left: 30px;
+  padding-top: 130px;
+  box-sizing: border-box;
+  width: 50.5%;
+}
+
+.about .item .bottom-box .text-holder .bottom-text-cn {
+  font-size: 14px;
+}
+
+.about .item .bottom-box .text-holder .bottom-text-en {
+  font-size: 10px;
+  margin-top: 25px;
+}
+
+.about .list .item.beforeIn {
+  opacity: 0;
+  transform: translateY(-500px);
+}
+
+.about .list .item .top-box.beforeIn {
+  opacity: 0;
+  transform: translateX(-1000px);
+}
+
+.about .list .item .bottom-box.beforeIn {
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+@media (max-width:1024px){
+  .title-en {
+    display: block;
+    position: static;
+    font-size: 20px;
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+  }
+
+  .title-cn {
+    position: static;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .about{
+      padding-bottom: 50px;
+  }
+
+  .about .list {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .about .list .item {
+    float: none;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    color: #e2e0e0;
+    opacity: 1;
+    transition: 0.7s 0.2s;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about .item:nth-child(2){
+      height: 400px;
+      background-position: 0 0;
+  }
+
+  .about .list .item.beforeIn {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .about .list .item .top-box.beforeIn {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .about .list .item .bottom-box.beforeIn {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .about .item .top-box {
+    height: 55%;
+    box-sizing: border-box;
+    padding: 0px;
+    transition: 0.7s 0.2s;
+    margin-bottom: 20px;
+  }
+
+  .about .item .top-box h1 {
+    height: 50px;
+    width: fit-content;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .about .item .bottom-box img {
+    float: none;
+    width: 100%;
+  }
+  .about .item .bottom-box .text-holder {
+    float: none;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about .item .bottom-box .text-holder .bottom-text-cn {
+    font-size: 14px;
+  }
+
+  .about .item .bottom-box .text-holder .bottom-text-en {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}

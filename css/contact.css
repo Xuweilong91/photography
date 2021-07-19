@@ -1,0 +1,156 @@
+.contact {
+  background-image: url("http://www.bufantec.com/site/sheying/images/footer.jpg");
+  overflow: hidden;
+}
+
+.contact .title {
+  position: relative;
+  color: #fff;
+  height: 600px;
+  width: 20%;
+  float: left;
+}
+
+.contact .info {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 125px 0 0 125px;
+}
+.contact .info h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.contact .info p {
+  line-height: 25px;
+  margin-bottom: 35px;
+  color: #bfbfbf;
+  text-align: left;
+  font-size: 12px;
+}
+
+.contact .ipt {
+  float: left;
+  position: relative;
+  padding-top: 180px;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+}
+
+.contact .ipt li {
+  float: left;
+  margin-right: 20px;
+}
+
+.contact .ipt input {
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #969697;
+  outline: none;
+  height: 45px;
+  color: #fff;
+}
+
+.contact .ipt .long-input {
+  margin-top: 20px;
+  width: 640px;
+}
+
+.contact .update {
+  position: absolute;
+  display: inline-block;
+  bottom: -100px;
+  left: 2px;
+  font-size: 14px;
+  color: #9c9c9c;
+  width: 130px;
+  height: 30px;
+  border: 2px #9c9c9c solid;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+  .title-en {
+    display: block;
+    position: static;
+    font-size: 20px;
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+  }
+
+  .title-cn {
+    position: static;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .contact {
+    background: url("http://www.bufantec.com/site/sheying/images/footer.jpg")
+      no-repeat center;
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  .contact .title {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    float: none;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .contact .info {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  .contact .ipt li {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact .ipt {
+    float: none;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .contact .ipt input {
+    display: block;
+    width: 100%;
+  }
+
+  .contact .ipt .long-input {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+
+  .contact .info p {
+    line-height: 25px;
+    margin-bottom: 35px;
+    color: #bfbfbf;
+    text-align: center;
+  }
+
+  .contact .update {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

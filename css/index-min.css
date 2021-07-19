@@ -1,0 +1,255 @@
+
+@media (max-width: 1024px) {
+  #menu {
+    display: none;
+  }
+
+  .banner .banner-text h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .banner .banner-text p {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  .title-en {
+    display: block;
+    position: static;
+    font-size: 20px;
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+  }
+
+  .title-cn {
+    position: static;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .project {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project .list {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project .item {
+    float: none;
+    height: 180px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .project .item:nth-child(1) {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+  }
+
+  .project .item.before-active {
+    width: 100%;
+  }
+
+  .project .type {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .project .text-holder {
+    display: none;
+  }
+
+  .project .link-to-photo {
+    display: none;
+  }
+
+  .project .link-to-photo:hover {
+    display: none;
+  }
+
+  .project .item:nth-child(n + 2):hover {
+    border: 3px solid transparent;
+  }
+
+  .project .item:nth-child(n + 2):hover .text-holder {
+    display: none;
+  }
+
+  /* recommand */
+
+  .recommand .list {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .recommand .list .item {
+    float: none;
+    width: 100%;
+    height: 800px;
+    margin-top: 40px;
+  }
+
+  .recommand .item.mg0,
+  .recommand .item .img-holder.mg0,
+  .recommand .item .img-holder2.mg0 {
+    margin-top: 20px;
+  }
+
+  .recommand .item:nth-child(1) {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    margin-top: 60px;
+    height: 100px;
+  }
+
+  /* about */
+  .about .list {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .about .list .item {
+    float: none;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    color: #e2e0e0;
+    opacity: 1;
+    transition: 0.7s 0.2s;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about .list .item.beforeIn {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .about .list .item .top-box.beforeIn {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .about .list .item .bottom-box.beforeIn {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .about .item .top-box {
+    height: 55%;
+    box-sizing: border-box;
+    padding: 0px;
+    transition: 0.7s 0.2s;
+    margin-bottom: 20px;
+  }
+
+  .about .item:nth-child(2){
+    height: 400px;
+    background-position: 0 0;
+}
+
+  .about .item .top-box h1 {
+    height: 50px;
+    width: fit-content;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .about .item .bottom-box img {
+    float: none;
+    width: 100%;
+  }
+  .about .item .bottom-box .text-holder {
+    float: none;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about .item .bottom-box .text-holder .bottom-text-cn {
+    font-size: 14px;
+  }
+
+  .about .item .bottom-box .text-holder .bottom-text-en {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .contact {
+    background: url("http://www.bufantec.com/site/sheying/images/footer.jpg") no-repeat center;
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  .contact .title {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    float: none;
+    transition: 0.7s 0.2s;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .contact .info {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  .contact .ipt li {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact .ipt {
+    float: none;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .contact .ipt input {
+    display: block;
+    width: 100%;
+  }
+
+  .contact .ipt .long-input {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .contact .beforeIn {
+    transform: translateY(0px);
+  }
+
+  .contact .info p {
+    line-height: 25px;
+    margin-bottom: 35px;
+    color: #bfbfbf;
+    text-align: center;
+  }
+
+  .contact .update {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

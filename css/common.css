@@ -1,0 +1,166 @@
+body {
+  background-color: #000;
+  color: #969697;
+}
+
+.title-en{
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 42px;
+  font-size: 48px;
+  transform: rotate(90deg);
+  transform-origin: 0 100%;
+}
+
+.title-cn{
+  display: block;
+  position: absolute;
+  top: 135px;
+  left: 110px;
+  font-size: 16px;
+  width: 10px;
+}
+
+/* header */
+.header-m {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+  display: block;
+}
+
+.header .logo {
+  float: left;
+  margin-top: 22px;
+  margin-left: 42px;
+}
+
+.header .nav-list {
+  margin-top: 22px;
+  float: right;
+}
+
+.header .nav-item {
+  float: left;
+  position: relative;
+  margin-left: 35px;
+}
+
+.header .nav-item span {
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  display: none;
+}
+
+.header .nav-item.active a {
+  color: #fff;
+}
+
+.header .nav-item.active span {
+  display: block;
+}
+
+.header .nav-item:hover span {
+  display: block;
+}
+
+.header .search {
+  margin-right: 35px;
+  margin-left: 110px;
+}
+
+.header .search img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    display: none;
+  }
+
+  .header-m {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .header-m .logo{
+      float: left;
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+
+  .header-m .open-btn{
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+  }
+
+  .header-m .open-btn .line{
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background-color: #fff;
+    margin-top: 6px;
+    transition: .5s;
+  }
+
+  .header-m .open-btn .line.one{
+      margin-top: 0px;
+  }
+
+  .header-m .open-btn .line.one.active{
+      transform: rotate(45deg) translateX(5px);
+  }
+
+  .header-m .open-btn .line.three.active{
+    transform: rotate(-45deg) translateX(5px) ;
+}
+
+  .header-m .open-btn .line.two.active{
+      display: none;
+  }
+
+  .header-m .list{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: #000;
+      z-index: -1;
+  }
+
+  .header-m .list .item{
+      height: 57px;
+  }
+
+  .header-m .list .item a{
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height: 57px;
+      color: #fff;
+  }
+
+
+}
